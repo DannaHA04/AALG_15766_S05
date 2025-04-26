@@ -26,11 +26,11 @@ print("Lista ordenada por burbuja:", array)
 
 
 def ordInsercion(array):
-    for i in range(1, len(array)):
-        j = i
-        while j > 0 and array[j - 1] > array[j]:
-            array[j], array[j - 1] = array[j - 1], array[j]
-            j = j - 1
+    for inicio in range(1, len(array)):
+        siguiente = inicio
+        while siguiente > 0 and array[siguiente - 1] > array[siguiente]:
+            array[siguiente], array[siguiente - 1] = array[siguiente - 1], array[siguiente]
+            siguiente = siguiente - 1
 
 ordInsercion(array)
 print("Lista ordenada por Insercion:", array)
